@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Kavoon', cursive;
+    margin: 0;
+    padding: 0;
+    color: #222; /* couleur du texte */
+    padding-top: 90px;
+}
+
+.logo {
+    width: 60px; /* Ajuste la taille du logo */
+    height: auto;
+    display: block;
+}
+
+#parametres {
+    filter: brightness(0) invert(1);
+    width: 40px; /* Ajuste la taille du logo */
+    height: auto;
+}
+
+
+.header_menu {
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    padding-top:15px;
+    padding-bottom:15px;
+    align-items: center;
+    margin:0px;
+    position: fixed;
+    top: 0;            /* colle en haut de la page */
+    width: 100%;       /* prend toute la largeur */
+    z-index: 1000;
+}
+
+
+li a {
+    padding:8px;
+    border-radius: 5px; /* coins arrondis */
+    display:block
+}
+li a:hover {
+    background-color: #9c5d0a; /* couleur de fond au survol */
+    transition: background-color 0.3s; /* transition douce */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.deroulant {
+    display:none;
+}
+/*
+.deroulant li{
+    margin:0px;
+    padding:0px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.deroulant li a {
+    display: block;
+    color: #fff; 
+}
+
+.deroulant li a:hover {
+    background-color: #aa6306; 
+    transition: background-color 0.3s; 
+}*/
+
+.trigger_deroulant {
+    position: relative; /* nécessaire pour le positionnement absolu du menu déroulant */
+}
+
+.trigger_deroulant:hover .deroulant{
+    display: block;
+    position: absolute;
+    top: 100%;      /* place le menu juste sous le parent */
+    left: 0;        /* aligne à gauche du parent */
+    min-width: 180px; /* largeur minimale, ajuste si besoin */
+    background: black; /* couleur de fond du menu déroulant */
+    z-index: 1001;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/*
+.deroulant li a:hover {
+    color: #fff;  couleur du texte au survol 
+}*/
+
+section {
+    padding: 0px;
+    background-color: #b87a29; /* couleur de fond de la section */
+    margin: 0px; /* marge autour de la section */
+    border-radius: 0px; /* coins arrondis */
+    display:flex;
+    border: 0px;
+}
+
+#image_recette {
+    width: 800px; /* Ajuste la taille de l'image */
+    height: auto;
+    margin: 0px; /* Espace entre l'image et le texte */
+    padding: 0px;
+    outline: 0px; 
+    border: 0px;
+}
+
+div {
+    text-align: center;
+    padding: 0px; /* espace intérieur */
+    margin: 0px;
+}
+
+button {
+    background-color: #9c5d0a; /* couleur de fond */
+    color: white; /* couleur du texte */
+    border: none;
+    border-radius: 20px; /* coins arrondis */
+    padding: 10px 20px; /* espace intérieur */
+    cursor: pointer; /* curseur en main */
+    font-size: 18px; /* taille de la police */
+    font-weight: 600;
+    border: 2px solid #9c5d0a; /* bordure blanche de 2px */
+}
+
+button:hover {
+    background-color: #b87a29; /* couleur de fond au survol */
+    border-color:white;
+    color:black; /* couleur de bordure au survol */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* transition douce */
+    }
+
+.zone_texte {
+    padding: 20px; /* espace intérieur */
+}
+
+#image_equipement {
+    width: 600px; /* Ajuste la taille de l'image */
+    height: auto;
+}
+
+.deuxieme_style {
+    background-color:white; 
+    color: #9c5d0a; 
+    border-color: white;
+}
+
+#bouton2:hover {
+    background-color: #b87a29; /* couleur de fond au survol */
+    color: black; /* couleur du texte au survol */
+    transition: background-color 0.3s, color 0.3s; /* transition douce */
+}
+
+#origine_france {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+strong {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+#ateliers_populaires {
+    background-color: white;
+}
+
+.image_atelier {
+    width: 300; /* Ajuste la taille de l'image */
+    height: auto;
+    border-radius: 10px; /* coins arrondis */
+    margin-bottom: 10px;
+}
+
+.ateliers_populaires {
+    background-color: white;
+    justify-content: space-around;
+
+}
+
+.atelier_populaire:hover {
+    background-color: #b87a29; /* couleur de fond au survol */
+    transition: background-color 0.3s; /* transition douce */
+    color:white
+}
+
+.atelier_populaire:hover img {
+    transform: scale(1.05); /* zoom léger sur l'image au survol */
+    transition: transform 0.3s; /* transition douce */
+}
+
+
+.atelier_populaire {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+em {
+    font-style: italic;
+    color: #9c5d0a; /* couleur italique */
+}
+
+.prix {
+    text-align: center;
+}
+
+.note{
+    width: 17px;
+}
+
+.note2 {
+    text-align: center;
+}
+
+.social-icon {
+    width: 60px; /* Ajuste la taille de l'icône */
+    height: auto;
+    margin-right: 20px; /* espace entre les icônes */
+    display: block;
+}
+
+.social-media {
+    list-style: none; /* Supprime les puces */
+    padding: 0; /* Supprime le padding */
+    display: flex; /* Affiche les icônes en ligne */
+    justify-content: left; /* Centre les icônes horizontalement */
+}
+
+footer {
+    background-color: #9c5d0a; /* couleur de fond du footer */
+    color: white; /* couleur du texte */
+    padding: 20px; /* espace intérieur */
+    position: relative; /* nécessaire pour le positionnement absolu des icônes */
+    display: flex;
+    justify-content: space-around;
+}
+
+.a_propos {
+    text-align: center;
+    margin: 0px; /* marge autour de la section */
+    padding: 0px; /* espace intérieur */
+    list-style: none; /* supprime les puces */
+}

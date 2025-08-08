@@ -1,0 +1,160 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre à cuisiner</title>
+    <link rel="stylesheet" href="page_acceuil.css">
+</head>
+<body>
+    <header>
+        <nav>   
+            <ul class="header_menu">
+                <li><img src="photos/cooking.png" alt="Logo de Apprendre à cuisiner" class="logo"></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="trigger_deroulant"><a href="recettes.html">Recettes</a>
+                    <ul class="deroulant">
+                        <li><a href="oeufs_cocotte.html">Oeufs cocottes</a></li>
+                        <li><a href="fondant_chocolat.html">Fondant au chocolat</a></li>
+                        <li><a href="veloute_courgettes.html">Velouté de courgettes</a></li>
+                    </ul>
+                </li>
+                <li class="trigger_deroulant"><a href="equipements.html">Equipements</a>
+                    <ul class="deroulant">
+                        <li><a href="couteaux.html">Couteaux</a></li>
+                        <li><a href="moules.html">Moules</a></li>
+                        <li><a href="casseroles_poele.html">Casseroles/Poêle</a></li>
+                        <li><a href="robot_cuisine.html">Robot de cuisine</a></li>
+                    </ul>
+                </li>
+                <li><a href="#ateliers">Ateliers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="parametres.html"><img src="photos/parametres.png" alt="icone de paramètres" class="logo" id="parametres"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="zone_texte">
+            <br>
+            <br>
+            <br>
+            <h2>Recettes maison</h2>
+            <br>
+            <p>Découvrez nos délicieuses recettes maison, élaborées avec soin et passion.</p>
+            <br>
+            <button onclick="location.href='recettes.html'" id="bouton1">Voir toutes les recettes</button> 
+            <br>
+            <br>
+            <br>
+            <button onclick="location.href='newsletter.html'" class="deuxieme_style">S'abonner à la newsletter</button>
+        </div>
+        <div class="zone_image">
+            <img src="photos/recettes.jpg" alt="poulet sortant du four entouré de pommes de terre et d'haricots verts" id="image_recette">
+        </div>
+    </section>
+    <section>
+        <div class="zone_image">
+            <img src="photos/equipements2.jpg" alt="équipements de cuisine" id="image_equipement">
+        </div>
+        <div class="zone_texte">
+            <br>
+            <br>
+            <h2>Équipements de cuisine</h2>
+            <br>
+            <br>
+            <p>Découvrez notre sélection d'équipements de cuisine pour réussir vos recettes.</p>
+            <br>
+            <br>
+            <br>
+            <button onclick="location.href='equipements.html'">Voir tous les équipements</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p id="origine_france">Tout le matériel est certifié <strong>100% français*</strong> !</p>
+        </div>
+    </section>
+    <section class="ateliers" id="ateliers">
+        <div class="zone_texte">
+            <h2>Nos ateliers de cuisine</h2>
+            <br>
+            <p>Participez à nos ateliers de cuisine pour apprendre de nouvelles techniques et recettes. Vous êtes plutôt :</p>
+            <br>
+            <button onclick="location.href='cuisine_fr.html'">cuisine française</button>
+            <br>
+            <br>
+            <button onclick="location.href='cuisine_asiatique.html'" class="deuxieme_style">cuisine asiatique</button>
+            <br>
+            <br>
+            <button onclick="location.href='patisserie.html'">pâtisserie</button>
+            <br>
+            <br>
+        </div>
+        <div class="zone_image">
+            <video src="videos/atelier_cuisine.mp4" controls height="400" autoplay muted>
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+        </div>
+    </section>
+    <div id="ateliers_populaires">
+        <br>
+        <h2>Nos ateliers les plus populaires :</h2>
+        <br>
+        <br>    
+        <section class="ateliers_populaires">
+        <div class="atelier_populaire">
+            <img src="photos/macarons.webp" alt="Atelier Macarons" class="image_atelier">
+            <br>
+            Macarons - <em>Paris 5ème</em>
+            <br>
+            <br>
+            <div class="prix">66€/personne</div>
+            <br>
+            <div class="note2"><img src="photos/star.png" alt="étoile" class="note"> 4,5 (20 avis)</div>
+        </div>
+        <div class="atelier_populaire">
+            <img src="photos/quenelles.png" alt="Atelier Quenelles" class="image_atelier">
+            <br>
+            Quenelles de brochet - <em>Lyon</em>
+            <br>
+            <br>
+            <div class="prix">58€/personne</div>
+            <br>
+            <div class="note2"><img src="photos/star.png" alt="étoile" class="note"> 4,2 (10 avis)</div>
+        </div>
+        <div class="atelier_populaire">
+            <img src="photos/sushis.jpg" alt="Atelier Sushi" class="image_atelier">
+            <br>
+            Sushi et sashimi - <em>Paris 13ème</em>
+            <br>
+            <br>
+            <div class="prix">75€/personne</div>
+            <br>
+            <div class="note2"><img src="photos/star.png" alt="étoile" class="note"> 4,9 (35 avis)</div>
+        </div>
+        </section>
+    </div>
+    <br><br><br>
+
+    <footer>
+        <div>
+        <p>Rejoignez-nous sur :</p>
+        <br>
+            <ul class="social-media">
+                <li><a href="https://www.instagram.com"><img class="social-icon" src="photos/instagram.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com"><img class="social-icon" src="photos/linkedin.png" alt=""></a></li>
+                <li><a href="https://www.tiktok.com"><img class="social-icon" src="photos/tik-tok.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>A propos</h2>
+            <ul class="a_propos">
+                <li><a href="index.html">Presse</a></li>
+                <li><a href="recettes.html">Nous rejoindre</a></li>
+                <li><a href="equipements.html">Le blog</a></li>
+            </ul>
+        </div>
+        
+    </footer>
+
+</body>
+</html>
